@@ -1,0 +1,212 @@
+/* import google fonts */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ebf1fa;
+}
+.wrapper{
+    margin: 2em;
+    background-color:#fff;
+    border: 1px solid rgb(224, 219, 219);
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    width: 500px;
+}
+h2{
+    padding: 5px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 900;
+    font-size: 2rem;
+    color:rgb(122, 117, 117);
+    margin-bottom: 10px;
+}
+h4{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color:rgb(122, 117, 117);
+    font-weight: 700;
+}
+label{
+    color:rgb(122, 117, 117);
+    font-weight: 600;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+i{
+    padding: 10px;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: hotpink;
+}
+input, select{
+    width: 80%;
+    border:0.5px #ebedef solid;
+    background-color: rgb(214, 209, 209);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    color: #768192;
+}
+input:focus{
+    border: 1px solid gray;
+}
+.dob1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.dob{
+    width: 31%;
+    border-radius: 0;
+    border-radius: 5px;
+}
+.sel1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.sel{
+    width: 42%;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.cvc{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.cvc1{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 60%;
+    /* margin-top: 10px; */
+    margin-right: 10px;    
+}
+.down{
+    margin-top: 10px;
+}
+.cvc1 i{
+    margin-right: 8px;
+}
+.paypal{
+    margin-bottom: 10px;
+}
+::placeholder{
+    color:honeydew;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.sel1 .sel .opt{
+    color:#f0fff0;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+}
+button{
+    width: 100%;
+    border: 1px solid rgb(207, 198, 198);
+    background-color: rgb(226, 220, 220);
+    border-radius: 10px;
+    padding: 10px;
+    color:hotpink;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    outline: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+}
+button:hover{
+    background-color:hotpink;
+    color: #fff;
+    border: none;
+    transition: all ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 767px) {
+    body{
+        background-color: #fff;
+    }
+    .wrapper{
+        width: 400px;
+    }
+    h2{
+        font-size: 1.5rem;
+        padding-bottom:10px ;
+    }
+    h4{
+        padding: 10px 0;
+        font-size: 1.2rem;
+    }
+    input{ 
+        width: 84%;
+    }
+    .dob1{
+        display: flex;
+        width: 100%;
+
+    }
+    label{ padding: 5px;}
+
+    .dob{
+        width: 50%;
+        border-radius: 0;
+    }
+    .gen1{
+        display: block;
+    }
+    .cvc input{
+        width: 60%;
+    }
+    .sel1{
+        width: 100%;
+    }
+    .sel{
+        width: 50%;
+    }
+    
+    .check{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+    button{
+        width: 90%;
+    
+    }
+}
